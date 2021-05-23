@@ -3,7 +3,8 @@
 
 # source ~/.bash_profile
 # Path to your oh-my-zsh installation.
-export ZSH="/home/admin/.oh-my-zsh"
+export MYPATH="/Users/lina"
+export ZSH="/Users/lina/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -126,16 +127,16 @@ fg(){ if [[ "$*" =~ ^[0-9]+$ ]]; then builtin fg %"$*";else builtin fg "$@";fi }
 alias CLICOLOR=1
 alias LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
-source /home/admin/ENV_3.7.6/bin/activate
-export PATH=$PATH:$HOME/bin:/home/admin/go/bin:/usr/local/go/bin:/usr/local/bin:/usr/libexec/git-core:/usr/bin:/usr/sbin
+# source $MYPATH/ENV_3.7.6/bin/activate
+export PATH=$PATH:$HOME/bin:$MYPATH/go/bin:/usr/local/go/bin:/usr/local/bin:/usr/libexec/git-core:/usr/bin:/usr/sbin
 
-export GOPATH=/home/admin/go
+export GOPATH=$MYPATH/go
 export GO111MODULE=on
 export GOPROXY=https://goproxy.cn
 # alias  PATH=$PATH:$(go env GOPATH)/bin
 # alias  GOCACHE=off
 
-[[ -s /home/admin/.autojump/etc/profile.d/autojump.sh ]] && source /home/admin/.autojump/etc/profile.d/autojump.sh
+[[ -s $MYPATH/.autojump/etc/profile.d/autojump.sh ]] && source $MYPATH/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
 
 # alias tmux='tmux -2'
@@ -143,4 +144,4 @@ alias vi="nvim"
 alias vim="nvim"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export KUBECONFIG=/home/admin/.kube/admin.conf
+export KUBECONFIG=$MYPATH/.kube/admin.conf

@@ -6,6 +6,7 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=/home/admin/.fzf
+
 " set rtp+=/usr/local/opt/fzf
 call plug#begin('~/.vim/plugged')
 Plug 'christoomey/vim-tmux-navigator'
@@ -124,6 +125,7 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 "********************************************************
 "                        Tagbar配置                     *
 "********************************************************
+" https://github.com/preservim/tagbar/issues/365
 let g:tagbar_width=35
 let g:tagbar_autofocus=1
 let g:tagbar_left = 0
@@ -166,7 +168,7 @@ let g:rainbow_conf = {
 " https://github.com/christoomey/vim-tmux-navigator
 let g:tmux_navigator_no_mappings = 1
 
-nnoremap <silent> <c-x> :TmuxNavigateLeft<cr>
+nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
 nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
 nnoremap <silent> <c-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <c-l> :TmuxNavigateRight<cr>

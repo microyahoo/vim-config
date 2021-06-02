@@ -1,0 +1,21 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Liang Zheng
+	email = microyahoo@163.com
+[core]
+	excludesfile = ~/.gitignore
+	editor = nvim
+	; editor = /usr/bin/nvim
+; [credential]
+;     helper = store --file $HOME/go/src/git.credential
+;     helper = store
+[alias]
+    co = checkout
+    st = status
+    br = branch
+    rv = remote -v
+[http]
+	lowSpeedLimit = 0
+	lowSpeedTime = 999999
+	postBuffer = 524288000

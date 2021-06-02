@@ -1,0 +1,7 @@
+*.apk
+*.pyc
+diff[0-9]*
+diff[1-9][0-9]*
+cscope*
+patch[0-9]
+coverprofiles/

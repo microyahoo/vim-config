@@ -38,7 +38,7 @@ Plug 'davidhalter/jedi-vim'
 Plug 'Chiel92/vim-autoformat'
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/vim-lsp'
-Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 "set rtp+=~/.vim/bundle/Vundle.vim

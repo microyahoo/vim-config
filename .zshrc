@@ -3,8 +3,8 @@
 
 # source ~/.bash_profile
 # Path to your oh-my-zsh installation.
-export MYPATH="/Users/lina"
-export ZSH="/Users/lina/.oh-my-zsh"
+export MYPATH="$HOME"
+export ZSH="$MYPATH/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -145,3 +145,11 @@ alias vim="nvim"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export KUBECONFIG=$MYPATH/.kube/admin.conf
+
+# gcmcore                                                                       
+# https://stackoverflow.com/questions/59119904/process-terminated-couldnt-find-a-valid-icu-package-installed-on-the-system-in                                   
+export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1                                  
+                                                                                
+# https://github.com/microsoft/Git-Credential-Manager-Core/blob/main/docs/linuxcredstores.md                                                                    
+# NOTE: this is not secure method of credential storage!                        
+export GCM_CREDENTIAL_STORE=plaintext

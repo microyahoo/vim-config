@@ -81,7 +81,7 @@ plugins=(
   tmux
   tmuxinator
   dotenv
-  osx
+  macos 
   rake
   rbenv
 )

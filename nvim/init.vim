@@ -11,6 +11,7 @@ set rtp+=/home/admin/.fzf
 call plug#begin('~/.vim/plugged')
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf.vim'
+Plug 'morhetz/gruvbox'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'benmills/vimux'
 Plug 'luochen1990/rainbow'
@@ -224,7 +225,9 @@ set showmatch
 syntax enable
 syntax on
 
-colorscheme molokai
+" colorscheme molokai
+set background=dark
+colorscheme gruvbox
 
 " Enable folding
 set foldmethod=indent
